@@ -1,0 +1,5 @@
+name: 'Fronius Inverter'
+packageKey: 'froniusv1'
+permissions:
+    lan: {}
+    discovery: {}

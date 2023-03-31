@@ -1,0 +1,34 @@
+{
+    "id": "partyvoice23922.froniusselfgen",
+    "version": 1,
+    "status": "proposed",
+    "name": "froniusselfgen",
+    "ephemeral": false,
+    "attributes": {
+        "selfgen": {
+            "schema": {
+                "type": "object",
+                "properties": {
+                    "value": {
+                        "type": "number",
+                        "minimum": 0,
+                        "maximum": 100
+                    },
+                    "unit": {
+                        "type": "string",
+                        "enum": [
+                            "%"
+                        ],
+                        "default": "%"
+                    }
+                },
+                "additionalProperties": false,
+                "required": [
+                    "value"
+                ]
+            },
+            "enumCommands": []
+        }
+    },
+    "commands": {}
+}

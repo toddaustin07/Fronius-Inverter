@@ -1,0 +1,32 @@
+{
+    "id": "partyvoice23922.froniusload",
+    "version": 1,
+    "status": "proposed",
+    "name": "froniusload",
+    "ephemeral": false,
+    "attributes": {
+        "load": {
+            "schema": {
+                "type": "object",
+                "properties": {
+                    "value": {
+                        "type": "number"
+                    },
+                    "unit": {
+                        "type": "string",
+                        "enum": [
+                            "kW"
+                        ],
+                        "default": "kW"
+                    }
+                },
+                "additionalProperties": false,
+                "required": [
+                    "value"
+                ]
+            },
+            "enumCommands": []
+        }
+    },
+    "commands": {}
+}

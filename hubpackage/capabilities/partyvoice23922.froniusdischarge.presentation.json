@@ -1,0 +1,36 @@
+{
+    "dashboard": {
+        "states": [
+            {
+                "label": "{{discharge.value}} {{discharge.unit}}"
+            }
+        ],
+        "actions": []
+    },
+    "detailView": [
+        {
+            "label": "{{i18n.label}}",
+            "displayType": "state",
+            "state": {
+                "label": "{{discharge.value}} {{discharge.unit}}",
+                "unit": "discharge.unit"
+            }
+        }
+    ],
+    "automation": {
+        "conditions": [
+            {
+                "label": "Battery Discharge",
+                "displayType": "numberField",
+                "numberField": {
+                    "value": "discharge.value",
+                    "valueType": "number",
+                    "unit": "discharge.unit"
+                }
+            }
+        ],
+        "actions": []
+    },
+    "id": "partyvoice23922.froniusdischarge",
+    "version": 1
+}

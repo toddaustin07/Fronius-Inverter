@@ -1,0 +1,45 @@
+{
+    "dashboard": {
+        "states": [
+            {
+                "label": "{{selfconsumed.value}}{{selfconsumed.unit}}"
+            }
+        ],
+        "actions": []
+    },
+    "detailView": [
+        {
+            "label": "{{i18n.label}}",
+            "displayType": "slider",
+            "slider": {
+                "range": [
+                    0,
+                    100
+                ],
+                "unit": "selfconsumed.unit",
+                "value": "selfconsumed.value",
+                "valueType": "number"
+            }
+        }
+    ],
+    "automation": {
+        "conditions": [
+            {
+                "label": "Self-Consumption",
+                "displayType": "numberField",
+                "numberField": {
+                    "value": "selfconsumed.value",
+                    "valueType": "number",
+                    "unit": "selfconsumed.unit",
+                    "range": [
+                        0,
+                        100
+                    ]
+                }
+            }
+        ],
+        "actions": []
+    },
+    "id": "partyvoice23922.froniusselfconsumed",
+    "version": 1
+}

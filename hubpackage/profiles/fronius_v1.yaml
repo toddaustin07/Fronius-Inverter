@@ -1,0 +1,54 @@
+name: fronius.v1
+components:
+  - id: main
+    capabilities:
+      - id: powerMeter
+        version: 1
+      - id: partyvoice23922.froniusload
+        version: 1
+      - id: partyvoice23922.froniusdraw
+        version: 1
+      - id: partyvoice23922.froniusdischarge
+        version: 1
+      - id: battery
+        version: 1
+      - id: partyvoice23922.froniusselfgen
+        version: 1
+      - id: partyvoice23922.froniusselfconsumed
+        version: 1
+      - id: refresh
+        version: 1
+    categories:
+      - name: Others
+metadata:
+  mnmn: SmartThingsCommunity
+  vid: 3bc1a176-d355-3513-a0a5-ce5df120e041
+  ocfDeviceType: x.com.st.d.energymeter
+preferences:
+  - title: "Response Timeout"
+    name: timeout
+    description: "Number of seconds"
+    required: true
+    preferenceType: number
+    definition:
+      minimum: 1
+      maximum: 60
+      default: 3
+  - title: "HTTP Request"
+    name: request
+    description: "Method:URL string"
+    required: true
+    preferenceType: string
+    definition:
+      stringType: text
+      minLength: 18
+      default: "GET:http://192.168.n.nnn/solar_api/v1/GetPowerFlowRealtimeData.fcgi"
+  - title: "Refresh Frequency"
+    name: refreshfreq
+    description: "Number of seconds"
+    required: true
+    preferenceType: number
+    definition:
+      minimum: 1
+      maximum: 86400
+      default: 30

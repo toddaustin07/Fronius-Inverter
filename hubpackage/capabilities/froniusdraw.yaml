@@ -1,0 +1,22 @@
+id: partyvoice23922.froniusdraw
+version: 1
+status: proposed
+name: froniusdraw
+ephemeral: false
+attributes:
+  draw:
+    schema:
+      type: object
+      properties:
+        value:
+          type: number
+        unit:
+          type: string
+          enum:
+            - kW
+          default: kW
+      additionalProperties: false
+      required:
+        - value
+    enumCommands: []
+commands: {}

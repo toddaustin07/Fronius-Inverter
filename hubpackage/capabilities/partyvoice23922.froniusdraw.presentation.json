@@ -1,0 +1,36 @@
+{
+    "dashboard": {
+        "states": [
+            {
+                "label": "{{draw.value}} {{draw.unit}}"
+            }
+        ],
+        "actions": []
+    },
+    "detailView": [
+        {
+            "label": "{{i18n.label}}",
+            "displayType": "state",
+            "state": {
+                "label": "{{draw.value}} {{draw.unit}}",
+                "unit": "draw.unit"
+            }
+        }
+    ],
+    "automation": {
+        "conditions": [
+            {
+                "label": "Grid Draw",
+                "displayType": "numberField",
+                "numberField": {
+                    "value": "draw.value",
+                    "valueType": "number",
+                    "unit": "draw.unit"
+                }
+            }
+        ],
+        "actions": []
+    },
+    "id": "partyvoice23922.froniusdraw",
+    "version": 1
+}

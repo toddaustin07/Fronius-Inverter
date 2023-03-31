@@ -1,0 +1,36 @@
+{
+    "dashboard": {
+        "states": [
+            {
+                "label": "{{load.value}} {{load.unit}}"
+            }
+        ],
+        "actions": []
+    },
+    "detailView": [
+        {
+            "label": "{{i18n.label}}",
+            "displayType": "state",
+            "state": {
+                "label": "{{load.value}} {{load.unit}}",
+                "unit": "load.unit"
+            }
+        }
+    ],
+    "automation": {
+        "conditions": [
+            {
+                "label": "Total Load",
+                "displayType": "numberField",
+                "numberField": {
+                    "value": "load.value",
+                    "valueType": "number",
+                    "unit": "load.unit"
+                }
+            }
+        ],
+        "actions": []
+    },
+    "id": "partyvoice23922.froniusload",
+    "version": 1
+}

@@ -1,0 +1,32 @@
+{
+    "id": "partyvoice23922.froniusdischarge",
+    "version": 1,
+    "status": "proposed",
+    "name": "froniusdischarge",
+    "ephemeral": false,
+    "attributes": {
+        "discharge": {
+            "schema": {
+                "type": "object",
+                "properties": {
+                    "value": {
+                        "type": "number"
+                    },
+                    "unit": {
+                        "type": "string",
+                        "enum": [
+                            "kW"
+                        ],
+                        "default": "kW"
+                    }
+                },
+                "additionalProperties": false,
+                "required": [
+                    "value"
+                ]
+            },
+            "enumCommands": []
+        }
+    },
+    "commands": {}
+}

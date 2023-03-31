@@ -1,0 +1,45 @@
+{
+    "dashboard": {
+        "states": [
+            {
+                "label": "{{selfgen.value}}{{selfgen.unit}}"
+            }
+        ],
+        "actions": []
+    },
+    "detailView": [
+        {
+            "label": "{{i18n.label}}",
+            "displayType": "slider",
+            "slider": {
+                "range": [
+                    0,
+                    100
+                ],
+                "unit": "selfgen.unit",
+                "value": "selfgen.value",
+                "valueType": "number"
+            }
+        }
+    ],
+    "automation": {
+        "conditions": [
+            {
+                "label": "Autonomy",
+                "displayType": "numberField",
+                "numberField": {
+                    "value": "selfgen.value",
+                    "valueType": "number",
+                    "unit": "selfgen.unit",
+                    "range": [
+                        0,
+                        100
+                    ]
+                }
+            }
+        ],
+        "actions": []
+    },
+    "id": "partyvoice23922.froniusselfgen",
+    "version": 1
+}
